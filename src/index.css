@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.363);
+}
+.parent{
+  min-height: 100vh;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.parent .card{
+  height: 380px;
+  width: 300px;
+  border-radius: 25px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.699);
+  box-shadow: 0 16px 16px rgba(0,0,0,0.08), 0 32px 32px rgba(0,0,0,0.12);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .header{
+  height: 70px;
+  /* border: 1px solid black ; */
+
+  display: flex;
+  justify-content: space-between;
+}
+.parent .card img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  background: rgba(128, 128, 128, 0.048);
+}
+.card .headerSection{
+  height: 25px;
+  width: 70px;
+  border-radius: 5px;
+  /* background: rgba(128, 128, 128, 0.247); */
+  border: 1px solid rgba(0, 0, 0, 0.212);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.card .headerSection:active{
+  background: rgba(128, 128, 128, 0.253);
+}
+.name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Amazon */
+.name p:first-of-type {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+}
+
+/* 5 days ago */
+.name p:last-of-type {
+  font-size: 12 px;
+  color: #777;
+}
+.card .prof{
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card .workMode{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-top: 10px;
+}
+.card .workMode p{
+  background: rgba(128, 128, 128, 0.39);
+  height: 20px;
+  width: 80px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 7px;
+  padding: 3px 0px 2px 0px;
+}
+.section-2{
+  height: 60px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.322);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer p:last-of-type{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.555);
+}
+.section-2 button{
+  width: 100px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 8px;
+  color:rgba(240, 255, 255, 0.699);
+  border: none;
+  cursor: pointer;
+}
